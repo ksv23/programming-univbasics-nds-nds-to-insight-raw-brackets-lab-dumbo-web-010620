@@ -25,27 +25,29 @@ def directors_totals(nds)
     # key: "value"
     # "Stephen Spielberg": 5
   }
-  start = 0
-
-  while start < nds.length do
-      total = 0
-      movie_count = 0
-      while movies < nds[start][:movies].length
-        total += nds[start][:movies][movie_count][:worldwide_gross]
-        movie_count += 1
-      end
-      result[nds[start][:name]] = total
-      start = start + 1
-
-      # #### OR #### #
-      # while start < nds.length do
-      #     total = 0
-      #     movie_count = 0
-      # nds[start][:movies].each do |movie|
-      #   total += movie[:worldwide_gross]
-      # end
-      # result[nds[start][:name]] = total
-      # start = start + 1
-  end
+  # start = 0
+  #
+  # while start < nds.length do
+  #     total = 0
+  #     movie_count = 0
+  #     while movies < nds[start][:movies].length
+  #       total += nds[start][:movies][movie_count][:worldwide_gross]
+  #       movie_count += 1
+  #     end
+  #     result[nds[start][:name]] = total
+  #     start = start + 1
+  #
+  #     # #### OR #### #
+  #     # while start < nds.length do
+  #     #     total = 0
+  #     #     movie_count = 0
+  #     # nds[start][:movies].each do |movie|
+  #     #   total += movie[:worldwide_gross]
+  #     # end
+  #     # result[nds[start][:name]] = total
+  #     # start = start + 1
+  # end
   result
+  puts directors_database
+
 end
